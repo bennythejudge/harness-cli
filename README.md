@@ -105,8 +105,10 @@ OPTIONS
 * [`harness k8s:create-role`](#harness-k8screate-role)
 * [`harness k8s:create-service-account`](#harness-k8screate-service-account)
 * [`harness k8s:get-service-account`](#harness-k8sget-service-account)
+* [`harness secret:getbyname [FILE]`](#harness-secretgetbyname-file)
 * [`harness secrets:create`](#harness-secretscreate)
 * [`harness secrets:delete`](#harness-secretsdelete)
+* [`harness secrets:getbyname [FILE]`](#harness-secretsgetbyname-file)
 * [`harness template:exec`](#harness-templateexec)
 * [`harness users:create`](#harness-userscreate)
 * [`harness users:delete`](#harness-usersdelete)
@@ -760,6 +762,22 @@ OPTIONS
 
 _See code: [src/commands/k8s/get-service-account.ts](https://github.com/ldhertert/harness-cli/blob/v0.9.15/src/commands/k8s/get-service-account.ts)_
 
+## `harness secret:getbyname [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ harness secret:getbyname [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/secret/getbyname.ts](https://github.com/ldhertert/harness-cli/blob/v0.9.15/src/commands/secret/getbyname.ts)_
+
 ## `harness secrets:create`
 
 Create a new secret
@@ -826,6 +844,22 @@ ALIASES
 ```
 
 _See code: [src/commands/secrets/delete.ts](https://github.com/ldhertert/harness-cli/blob/v0.9.15/src/commands/secrets/delete.ts)_
+
+## `harness secrets:getbyname [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ harness secrets:getbyname [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/secrets/getbyname.ts](https://github.com/ldhertert/harness-cli/blob/v0.9.15/src/commands/secrets/getbyname.ts)_
 
 ## `harness template:exec`
 

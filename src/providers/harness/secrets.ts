@@ -86,7 +86,7 @@ export class Secrets {
         return result.data.result
     }
 
-    private async getByName(name: string, secretType?: SecretType) {
+    async getByName(name: string, secretType?: SecretType) {
         const query = `
         query ($name: String!, $secretType: SecretType!) {
             result: secretByName(name: $name, secretType: $secretType) {
