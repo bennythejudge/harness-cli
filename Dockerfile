@@ -15,4 +15,4 @@ RUN npm link
 # First run seems slow, so try to run it here
 RUN harness --version
 
-ENTRYPOINT [ "harness" ]
+CMD [ "harness" ]
